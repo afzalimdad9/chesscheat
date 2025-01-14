@@ -11,11 +11,11 @@ https://user-images.githubusercontent.com/71329328/221189107-244544b0-8070-4ee3-
 <h1>How to install:</h1>
 First clone this repo if you have git installed on your machine:
 <code>
-git clone https://github.com/Eugenenoble2005/chesscheat.git
+git clone https://github.com/afzalimdad9/chesscheat.git
 </code>
 
 If you do not have git installed, you may download this repo as a zip by following this link:
-<a href = "https://github.com/Eugenenoble2005/chesscheat/archive/refs/heads/master.zip">Zip Download</a>
+<a href = "https://github.com/afzalimdad9/chesscheat/archive/refs/heads/master.zip">Zip Download</a>
 
 
 Open google chrome and visit 'chrome://extensions'.

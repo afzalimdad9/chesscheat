@@ -1,5 +1,5 @@
 {
-  "name": "chesscheat",
+  "name": "@afzalimdad9/chesscheat",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Eugenenoble2005/chesscheat.git"
+    "url": "git+https://github.com/afzalimdad9/chesscheat.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Eugenenoble2005/chesscheat/issues"
+    "url": "https://github.com/afzalimdad9/chesscheat/issues"
   },
-  "homepage": "https://github.com/Eugenenoble2005/chesscheat#readme",
+  "homepage": "https://github.com/afzalimdad9/chesscheat#readme",
   "dependencies": {
     "stockfish.wasm": "^0.10.0"
   }

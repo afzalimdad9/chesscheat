@@ -1,23 +1,27 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Chesscheat",
   "version": "1.1",
-  "icons": { "16": "icon.png",
-  "48": "icon.png",
- "128": "icon.png" },
- "browser_specific_settings": {
-  "gecko": {
-    "id": "chesscheatextension@gmail.com"
-  }
-},
-  "description": "Always see the optimal move in any chess.com game. Guarantees wins almost 100% of the time",
+  "description": "Always see the optimal move in any chess.com game. Guarantees wins almost 100% of the time.",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["https://www.chess.com/*", "https://chess.com/*"],
   "content_scripts": [
     {
-      "js": ["scripts/main.js"],
-      "matches": [
-        "https://www.chess.com/*",
-        "https://chess.com/*"
-      ]
+      "matches": ["https://www.chess.com/*", "https://chess.com/*"],
+      "js": ["scripts/main.js"]
     }
-  ]
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "afzalimdad9@gmail.com"
+    }
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
 }
