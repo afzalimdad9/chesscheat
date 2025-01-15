@@ -1,7 +1,7 @@
 //this is quite possibly the most disgusting piece of code i've ever written.
 var hackRunning = false,
-  playerNameContainerClass = "user-username-white",
-  playerName = "<your-username>",
+  playerNameContainerClass = "player-component",
+  playerName = "afzalaliabro",
   blackClockClass = "clock-black",
   chessEngine =
     "/bundles/app/js/vendor/jschessengine/stockfish.asm.1abfa10c.js";
@@ -59,13 +59,12 @@ function main() {
     return fen_string;
   }
   function getPlayerColor() {
-    const is_black = Array.from(
+    const playerNames = Array.from(
       document.getElementsByClassName(playerNameContainerClass) || []
-    )
-      ?.find((el) => el?.innerText === playerName)
-      ?.parentNode?.parentNode?.parentNode?.parentNode?.innerHTML?.includes(
-        blackClockClass
-      );
+    );
+    const is_black = playerNames
+      ?.find((el) => el?.innerHTML?.includes(playerName))
+      ?.innerHTML?.includes(blackClockClass);
     return is_black ? "black" : "white";
   }
   let fen_string = getFenString();
